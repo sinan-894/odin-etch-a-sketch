@@ -25,7 +25,7 @@ function createSketchBox(numberOfSquares){
             const divSquare = document.createElement('div');
             divSquare.classList.add('square')
             divSquare.addEventListener('mouseover',()=>{
-                divSquare.classList.add('on-hover');
+                divSquare.style.backgroundColor = getRandomColor()
             })
             divRow.appendChild(divSquare);
     
@@ -36,3 +36,12 @@ function createSketchBox(numberOfSquares){
 }
 
 
+function getRandomColor(){
+    const randomValueRed = Math.floor(Math.random()*255);
+    const randomValueBlue = Math.floor(Math.random()*255);
+    const randomValueGreen = Math.floor(Math.random()*255);
+
+    return `rgb(${randomValueRed},${randomValueBlue},${randomValueGreen})`
+
+
+}
