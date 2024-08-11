@@ -2,18 +2,39 @@ body{
     margin: 0px;
 }
 
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    border : 1px solid red;
+    height: 550px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .square{
     background-color: white;
-    height: 100px;
-    
+    border : 1px solid black;
     flex:1;
+    min-height: 10px;
 }
 
 .row{
     display: flex;
+    height: 100px;
 }
 
 .on-hover{
     background-color: black;
+}
+
+
+#number-of-squares{
+        margin: 20px 0px;
 }

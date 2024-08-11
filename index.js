@@ -1,5 +1,9 @@
 
 
+
+
+
+
 const containerDiv = document.querySelector('.container');
 
 
@@ -9,9 +13,9 @@ for(let i=0;i<16;i++){
     for(let j=0;j<16;j++){
         const divSquare = document.createElement('div');
         divSquare.classList.add('square')
-        divSquare.addEventListener('mouseover',()=>{
-            divSquare.classList.add('on-hover');
-        })
+        // divSquare.addEventListener('mouseover',()=>{
+        //     divSquare.classList.add('on-hover');
+        // })
         divRow.appendChild(divSquare);
 
     }
