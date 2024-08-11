@@ -5,6 +5,10 @@ const divMain = document.querySelector('.main');
 createSketchBox(16);
 function getNumberOfSquares(){
     const numberOfSquares = parseInt(prompt("Enter the number of squares needed in each side(3-100)"));
+    if (numberOfSquares>100||numberOfSquares<3){
+        alert("enter a value between 3-100");
+        return 0;
+    }
     const divContainer = document.querySelector(".container");
     divMain.removeChild(divContainer);
     createSketchBox(numberOfSquares)
